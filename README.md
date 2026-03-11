@@ -1,35 +1,44 @@
-1 Introducción
-2 Dataset
-3 Metodología
-4 Modelos utilizados
-5 Resultados
-6 Dashboard
+# Accident Severity Prediction System
 
-# Accident Severity Prediction
+Sistema de predicción de severidad de accidentes de tránsito utilizando **Machine Learning**.
 
-This project analyzes traffic accident data to identify patterns and predict accident severity using machine learning.
+El proyecto utiliza un modelo de **Random Forest** entrenado con datos históricos de accidentalidad para estimar la probabilidad de fatalidad en un accidente.
 
-## Features
+---
 
-- Exploratory Data Analysis
-- Feature engineering
-- Severity prediction model
-- API for predictions
-- Interactive dashboard
-
-## Technologies
+# Tecnologías utilizadas
 
 - Python
 - Pandas
-- Scikit-learn
-- FastAPI
+- Scikit-Learn
 - Streamlit
-- Docker
+- FastAPI
+- SMOTE (Imbalanced Learning)
 
-## Project Structure
+---
 
-- data
-- notebooks
-- src
-- dashboard
-- api
+#  Modelo de Machine Learning
+
+Modelo utilizado:
+
+Random Forest Classifier
+
+Variables utilizadas:
+
+- Vehículos involucrados
+- Mes del accidente
+- Fin de semana
+- Tipo de accidente
+
+Para mejorar el rendimiento del modelo se aplicó:
+
+SMOTE (Synthetic Minority Oversampling Technique)
+
+---
+
+#  Ejecutar el proyecto
+
+### 1️ Clonar repositorio
+
+bash
+git clone https://github.com/carlos-ortega-villa/accident-severity-prediction.git
